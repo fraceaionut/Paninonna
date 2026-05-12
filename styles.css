@@ -468,21 +468,82 @@ h3 {
     display: none;
   }
 
+  .site-header {
+    min-height: 96px;
+    padding: 10px 16px 8px;
+    gap: 10px;
+  }
+
+  .brand {
+    width: 100%;
+    justify-content: center;
+    gap: 9px;
+    font-size: 0.95rem;
+  }
+
   .nav-cta {
     display: none;
   }
 
   .brand img {
-    width: 48px;
-    height: 48px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .main-nav {
+    justify-content: center;
+    gap: 22px;
+    font-size: 0.66rem;
+    font-weight: 850;
   }
 
   .hero {
-    min-height: calc(100vh - 82px);
+    align-items: end;
+    justify-items: center;
+    min-height: calc(100svh - 96px);
+    padding: 0 18px 52px;
+    background:
+      linear-gradient(180deg, rgba(26, 12, 9, 0.1) 0%, rgba(26, 12, 9, 0.52) 42%, rgba(26, 12, 9, 0.9) 100%),
+      url("images/panini1.jpg") 52% center / cover;
+    text-align: center;
+  }
+
+  .hero-copy {
+    width: min(100%, 340px);
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    margin-bottom: 10px;
+    font-size: 0.62rem;
+    line-height: 1.35;
+    letter-spacing: 0.1em;
   }
 
   h1 {
-    font-size: clamp(3.7rem, 20vw, 5.8rem);
+    font-size: clamp(3.05rem, 15vw, 3.85rem);
+    line-height: 0.9;
+  }
+
+  .hero-text {
+    margin-top: 16px;
+    font-size: 0.82rem;
+    line-height: 1.55;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .button {
+    flex: 1 1 142px;
+    max-width: 156px;
+    min-height: 42px;
+    padding: 0 10px;
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
   }
 
   .coffee-media {
