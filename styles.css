@@ -369,6 +369,58 @@ h3 {
   grid-row: span 2;
 }
 
+.reviews-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.84fr);
+  gap: clamp(28px, 6vw, 80px);
+  align-items: center;
+  padding: clamp(62px, 8vw, 106px) clamp(18px, 5vw, 70px);
+  background: var(--burgundy-dark);
+  color: var(--paper);
+}
+
+.reviews-copy {
+  max-width: 720px;
+}
+
+.reviews-copy p {
+  color: rgba(255, 250, 241, 0.76);
+  line-height: 1.75;
+}
+
+.reviews-panel {
+  padding: clamp(24px, 4vw, 40px);
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+}
+
+.stars {
+  color: var(--gold);
+  font-size: clamp(2rem, 6vw, 3.8rem);
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+.reviews-panel p {
+  margin: 20px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.reviews-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.button.secondary.dark {
+  border-color: var(--burgundy);
+  color: var(--burgundy);
+}
+
 .visit-section {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
@@ -449,6 +501,7 @@ h3 {
   .intro-band,
   .menu-grid,
   .coffee-section,
+  .reviews-section,
   .visit-section {
     grid-template-columns: 1fr;
   }
